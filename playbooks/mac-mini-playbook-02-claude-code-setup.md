@@ -3,7 +3,7 @@
 
 **Series:** Mac Mini AI Powerhouse Setup
 **Level:** Beginner-friendly
-**Playbook:** 2 of 7
+**Playbook:** 2 of 2
 
 ---
 
