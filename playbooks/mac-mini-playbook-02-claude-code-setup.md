@@ -1,7 +1,7 @@
 # Playbook 2: Claude Code Setup
 ### For Women Building AI-Native Businesses
 
-**Series:** Sage AI Studios — Mac Mini AI Powerhouse Setup
+**Series:** Mac Mini AI Powerhouse Setup
 **Level:** Beginner-friendly
 **Playbook:** 2 of 7
 
