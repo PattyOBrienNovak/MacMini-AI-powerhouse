@@ -1,9 +1,9 @@
 # Playbook 1: Mac Mini — Unboxing & First Boot
 ### For Women Building AI-Native Businesses
 
-**Series:** Sage AI Studios — Mac Mini AI Powerhouse Setup
+**Series:** Mac Mini AI Powerhouse Setup
 **Level:** Beginner-friendly
-**Playbook:** 1 of 7
+**Playbook:** 1 of 2
 
 ---
 
