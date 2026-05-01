@@ -7,6 +7,28 @@
 
 ---
 
+## Why the Mac Mini
+
+**The machine itself**
+- $599 — serious capability at a price that makes sense
+- Small enough to sit behind your monitor, quiet enough to forget it's there
+- Power button is on the bottom — you can't shut it off accidentally, which matters when it's running things for you overnight
+
+**The always-on part**
+- It doesn't close. It doesn't need charging. It doesn't lose your work when you walk away.
+- Automations and agents can run while you sleep
+- Think of it as a personal server that also works as a regular computer
+
+**You don't need a tech background**
+- These playbooks walk you through every step — nothing is assumed
+- You'll use tools you likely already know: Chrome, Google Drive, your existing accounts
+
+**The bigger picture**
+- This is the foundation for building AI systems that actually work for your life
+- What used to take a tech team, you can now build yourself
+
+---
+
 ## Before You Begin
 
 **⏱ Time Required: 30 minutes**
