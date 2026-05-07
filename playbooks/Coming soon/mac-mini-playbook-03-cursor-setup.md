@@ -101,9 +101,9 @@ You'll see your plan level in the bottom left corner of the app. Free tier users
 Cursor supports several AI models. Here's what matters for this setup:
 
 1. Click the **gear icon** in the bottom left corner → **Cursor Settings**
-2. Find the **Models** section
+2. In the left sidebar of Settings, find the **Models** section
 3. Look for **Claude Sonnet** in the list and make sure it's enabled
-4. In the model selector at the top of any chat panel, choose **claude-sonnet** as your default
+4. Close Settings — you'll set Claude as your active model when you open your first chat in Step 9
 
 > **Why Claude in Cursor too?** Consistency. You're already using Claude with Claude Code in the terminal. Using the same model across tools means you're building intuition for how one AI thinks — rather than learning multiple AI personalities at once. You can always switch models mid-session if you want a second opinion.
 
@@ -171,7 +171,9 @@ Opens Composer — Cursor's multi-file agent. Like Claude Code in the terminal, 
 
 Open the chat panel with **Command + L**.
 
-Type:
+Before you type anything, look at the model selector at the top of the chat panel. Click it and choose **claude-sonnet**. You'll only need to do this once — Cursor remembers your choice.
+
+Now type:
 
 > *"I'm new to Cursor. What's in this project folder, and what would be a good first thing to build or add?"*
 
