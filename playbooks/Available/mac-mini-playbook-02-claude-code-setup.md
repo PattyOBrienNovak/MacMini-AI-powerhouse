@@ -308,8 +308,8 @@ You have Claude available as a native Mac app — always one click away.
 
 ## What Comes Next
 
-**Playbook 3: Jupyter Notebook Setup**
-Install Jupyter locally — required for the Anthropic certification course and AI development work.
+**Playbook 3: Cursor Setup**
+Install Cursor — a visual, AI-powered code editor that works alongside Claude Code.
 
 *Time Required: 20 minutes*
 
