@@ -3,7 +3,7 @@
 
 **Series:** Sage AI Studios — Mac Mini AI Powerhouse Setup
 **Level:** Beginner-friendly
-**Playbook:** 3 of 7
+**Playbook:** 4 of 7
 
 ---
 

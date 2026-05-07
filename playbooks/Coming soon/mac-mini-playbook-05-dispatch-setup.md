@@ -3,7 +3,7 @@
 
 **Series:** Sage AI Studios — Mac Mini AI Powerhouse Setup
 **Level:** Beginner-friendly
-**Playbook:** 4 of 7
+**Playbook:** 5 of 7
 
 ---
 
@@ -229,14 +229,14 @@ Task sent from phone → executed on Mac Mini → result delivered. That's the A
 
 ## What Comes Next
 
-**Playbook 5: Git and GitHub Setup**
+**Playbook 6: Git and GitHub Setup**
 Connect your Mac Mini to GitHub — version control, backup, and collaboration for everything you build.
 
 *Time Required: 20 minutes*
 
 ---
 
-> **Remember:** You don't have to do Playbook 5 today. Each playbook is its own complete win. Come back when you have another focused window.
+> **Remember:** You don't have to do Playbook 6 today. Each playbook is its own complete win. Come back when you have another focused window.
 
 ---
 
