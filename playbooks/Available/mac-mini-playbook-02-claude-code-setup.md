@@ -308,8 +308,8 @@ You have Claude available as a native Mac app — always one click away.
 
 ## What Comes Next
 
-**Playbook 3: Cursor Setup**
-Install Cursor — a visual, AI-powered code editor that works alongside Claude Code.
+**Playbook 3: VS Code Setup**
+Install VS Code with GitHub Copilot — a visual, AI-powered code editor that works alongside Claude Code.
 
 *Time Required: 20 minutes*
 
