@@ -44,7 +44,7 @@ You already have Claude Code installed from Playbook 2. Why install VS Code too?
 |---|---|---|
 | **Interface** | Terminal — text commands | Visual — like a word processor for code |
 | **Best for** | Autonomous tasks, running things, file operations | Reading code, editing files, building alongside AI |
-| **AI access** | Claude (Anthropic) | GitHub Copilot — uses Claude Sonnet on the free plan |
+| **AI access** | Claude (Anthropic) | GitHub Copilot — uses Claude Haiku on the free plan |
 | **Learning curve** | Steeper — terminal fluency helps | Gentler — if you've used Word or Notion, you can use this |
 | **When to use** | "Do this for me" | "Help me understand this / do this with me" |
 
@@ -92,7 +92,9 @@ Signing in with GitHub does two things: it lets VS Code sync your settings acros
 
 ## Step 4: Install GitHub Copilot
 
-GitHub Copilot is the AI layer inside VS Code. The free plan gives you a meaningful number of AI interactions per month and uses **Claude Sonnet** as one of its available models — keeping you in the same AI ecosystem you're building throughout this series.
+GitHub Copilot is the AI layer inside VS Code. The free plan gives you a meaningful number of AI interactions per month.
+
+> **Already have GitHub Copilot installed?** Skip to Step 5.
 
 1. Click the **Extensions icon** in the left sidebar — it looks like four squares, with one slightly separated
 2. In the search bar at the top of the Extensions panel, type **GitHub Copilot**
@@ -103,16 +105,17 @@ GitHub Copilot is the AI layer inside VS Code. The free plan gives you a meaning
 
 ---
 
-## Step 5: Set Claude Sonnet as Your Copilot Model
+## Step 5: Check Your Copilot Model
 
-By default, Copilot may use a different AI model. Here's how to switch to Claude Sonnet:
+The free plan uses **Claude Haiku** by default — a fast, capable model that's great for most tasks. If you upgrade to Copilot Pro (~$10/month), Claude Sonnet becomes available for more complex work. For now, Haiku is what you'll be working with.
+
+Here's where to find the model selector so you know where it is:
 
 1. Click the **Copilot icon** in the bottom right corner of VS Code — it looks like a small Copilot logo
 2. Click **"Open Copilot Chat"** — the chat panel opens on the right side
 3. At the top of the chat panel, find the **model selector** — it shows the currently active model name
-4. Click it and choose **Claude Sonnet** from the list
 
-> **Don't see Claude Sonnet?** It may be listed as "claude-sonnet" or similar. If it's not in the list yet, GPT-4o is a solid alternative while you wait for it to appear — Copilot's model options expand over time.
+You'll see Claude Haiku (or similar) listed. That's correct for the free plan — no changes needed.
 
 ---
 
@@ -120,7 +123,10 @@ By default, Copilot may use a different AI model. Here's how to switch to Claude
 
 VS Code works with folders. Open a folder on your Mac Mini and that folder becomes your project. Choose the option that fits where you are:
 
-**If you have a GitHub repo you want to work in:**
+**Already cloned a repo to your Mac Mini?**
+Go to **File → Open Folder**, navigate to where you saved it, and click **Open**. You're done — skip the clone steps below.
+
+**If you have a GitHub repo you want to clone:**
 1. Go to your repo on **github.com** and click the green **"Code"** button
 2. Make sure **HTTPS** is selected, then click the **copy icon** next to the URL — it'll look like `https://github.com/yourusername/your-repo-name.git`
 3. In VS Code, click the **Source Control icon** in the left sidebar — it looks like three circles connected by lines
@@ -189,7 +195,7 @@ In the Copilot Chat panel, click **"Edits"** at the top to switch to Edits mode.
 
 Make sure the Copilot Chat panel is open. If it's not, click the Copilot icon in the left sidebar.
 
-Before you type anything, check the model selector at the top of the chat panel and confirm **Claude Sonnet** is selected.
+Before you type anything, check the model selector at the top of the chat panel and confirm **Claude Haiku** (or your current model) is selected.
 
 Now type:
 
@@ -201,7 +207,23 @@ This is the key difference between VS Code with Copilot and a regular chat windo
 
 ---
 
-## Step 10: Eject Your Installers
+## Step 10: Open a Terminal Inside VS Code
+
+VS Code has a built-in terminal — you can run Claude Code without ever leaving the editor. This is one of the most useful things to know early: your visual editor and your AI terminal, side by side in the same window.
+
+To open it:
+1. Go to the menu bar → **Terminal → New Terminal**
+2. A terminal panel opens at the bottom of VS Code — it automatically starts in your current project folder
+
+You'll see the same prompt you're used to from Playbook 2. From here you can type `claude` to start a Claude Code session, run scripts, or use any terminal command — all while your files stay visible in the editor above.
+
+> **Keyboard shortcut:** Control + ` (the backtick key, just above Tab on your keyboard) opens and closes the terminal panel instantly. It's worth memorizing — you'll use it constantly.
+
+> **Why does this matter?** Copilot inside VS Code and Claude Code in the terminal are two different tools. Copilot is great for hands-on, in-editor work. Claude Code is better for larger autonomous tasks — running code, managing files, doing things across your whole system. Having both available in one window means you pick the right tool for each moment without switching apps.
+
+---
+
+## Step 11: Eject Your Installers
 
 When you downloaded VS Code, macOS mounted it as a disk image — a virtual drive that may appear on your desktop or in your Finder sidebar. Now that VS Code is installed, you can eject it.
 
