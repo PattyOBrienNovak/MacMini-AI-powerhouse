@@ -116,13 +116,17 @@ Cursor works with folders. Open a folder on your Mac Mini and that folder become
 **If you have a GitHub repo you want to work in:**
 1. Go to your repo on **github.com** and click the green **"Code"** button
 2. Make sure **HTTPS** is selected, then click the **copy icon** next to the URL — it'll look like `https://github.com/yourusername/your-repo-name.git`
-3. Back in Cursor, press **Command + Shift + P** to open the Command Palette — a search bar drops down at the top of the screen
-4. Type **Git: Clone** and press **Enter**
-5. Paste your repo URL and press **Enter**
+3. In Cursor, click the **Source Control icon** in the left sidebar — it looks like three circles connected by lines (a branching diagram)
+4. If no folder is open, you'll see a **"Clone Repository"** button — click it
+5. A URL bar appears at the top of the screen — paste your GitHub URL and press **Enter**
 6. Cursor asks where to save it — choose your **Documents** folder, then click **Select as Repository Destination**
 7. When it finishes, Cursor asks **"Would you like to open the cloned repository?"** → Click **Open**
 
+> **Don't see a "Clone Repository" button?** Try the menu bar instead: **File → Clone Repository** — the option may be there depending on your version of Cursor.
+
 > **Cursor may ask you to sign in to GitHub** during the clone step. Click **"Allow"** and sign in with the same account you used in Step 1. This is a one-time step — Cursor remembers it.
+
+> **⚠️ If cloning via Cursor isn't working:** Open **Terminal** (Command + Space → Terminal → Enter), run `git clone` followed by your GitHub URL, and press Enter. Cursor will save it to your home folder — then use **File → Open Folder** in Cursor to open it. You'll learn more about Terminal and Git in Playbook 5.
 
 **Starting from scratch:**
 1. Open **Finder** → go to **Documents** → right-click → **New Folder** → name it `my-first-project`
