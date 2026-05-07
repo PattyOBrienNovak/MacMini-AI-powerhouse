@@ -111,7 +111,18 @@ Cursor supports several AI models. Here's what matters for this setup:
 
 ## Step 6: Open Your First Project
 
-Cursor works with folders. Open a folder on your Mac Mini and that folder becomes your project.
+Cursor works with folders. Open a folder on your Mac Mini and that folder becomes your project. Choose the option that fits where you are:
+
+**If you have a GitHub repo you want to work in:**
+1. Go to your repo on **github.com** and click the green **"Code"** button
+2. Make sure **HTTPS** is selected, then click the **copy icon** next to the URL — it'll look like `https://github.com/yourusername/your-repo-name.git`
+3. Back in Cursor, press **Command + Shift + P** to open the Command Palette — a search bar drops down at the top of the screen
+4. Type **Git: Clone** and press **Enter**
+5. Paste your repo URL and press **Enter**
+6. Cursor asks where to save it — choose your **Documents** folder, then click **Select as Repository Destination**
+7. When it finishes, Cursor asks **"Would you like to open the cloned repository?"** → Click **Open**
+
+> **Cursor may ask you to sign in to GitHub** during the clone step. Click **"Allow"** and sign in with the same account you used in Step 1. This is a one-time step — Cursor remembers it.
 
 **Starting from scratch:**
 1. Open **Finder** → go to **Documents** → right-click → **New Folder** → name it `my-first-project`
