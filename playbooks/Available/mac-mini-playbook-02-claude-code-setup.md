@@ -210,15 +210,39 @@ You'll see a version number. Claude Code is installed.
 
 Now you connect Claude Code to your Anthropic account using the key you saved in Step 2.
 
-Type:
+**Set your API key as a permanent environment variable.** This is the most reliable method — it never expires, and it works for both interactive sessions and any automated scripts or scheduled tasks you build later.
+
+In Terminal, run this command — replacing `YOUR_KEY_HERE` with your actual key (the one starting with `sk-ant-`):
+
+```
+echo 'export ANTHROPIC_API_KEY="YOUR_KEY_HERE"' >> ~/.zprofile
+```
+
+Then make it active in your current Terminal window:
+
+```
+source ~/.zprofile
+```
+
+Confirm it worked:
+
+```
+echo $ANTHROPIC_API_KEY
+```
+
+You should see your key printed back. If you do, Claude Code will automatically use it every time — no login required, no expiration.
+
+> **Why this way?** Claude Code also offers a browser-based login (`claude login`). That method is convenient but the session expires after 7 days — meaning any daily automations or scheduled scripts will fail and need you to log in again. Setting the API key in your shell profile is permanent and silent. It just works.
+
+> **Can't find your key?** Go back to console.anthropic.com, create a new one named `mac-mini-2`, copy it immediately, and save it this time before closing the window.
+
+Now open Claude Code to confirm everything is connected:
 
 ```
 claude
 ```
 
-Claude Code will walk you through a short setup. Use your **arrow keys** to move between options and press **Enter** to select. No mouse needed — Terminal is keyboard-driven.
-
-> **Can't find your key?** Go back to console.anthropic.com, create a new one named `mac-mini-2`, copy it immediately, and save it this time before closing the window.
+Claude Code will walk you through a short setup if this is your first time. Use your **arrow keys** to move between options and press **Enter** to select. No mouse needed — Terminal is keyboard-driven.
 
 **macOS may ask: "Terminal wants to access files managed by iCloud Drive."**
 → This is macOS protecting your files — not Claude doing anything unexpected. Your answer depends on where your files live:
