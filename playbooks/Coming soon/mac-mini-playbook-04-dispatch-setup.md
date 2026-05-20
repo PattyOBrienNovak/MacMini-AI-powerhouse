@@ -139,7 +139,44 @@ If you missed the prompt, go to **iPhone Settings → Notifications → Claude**
 
 ---
 
-## Step 8: Create Your First Project
+## Step 8: Keep Cowork Running When You're Away
+
+Cowork is built to work while you're not at your desk — but two macOS behaviors can quietly shut it down when your Mac Mini is left unattended for days at a time. Fix both now, before you walk away.
+
+**What goes wrong:** macOS has a feature called App Nap that throttles or suspends apps with no visible user interaction. When no one is actively using Claude, macOS treats it as idle and may reduce its resources — eventually stopping scheduled tasks and Dispatch from responding. Under memory pressure, macOS can go further and close Claude entirely. These two fixes prevent both scenarios.
+
+---
+
+**Fix 1: Disable App Nap for Claude**
+
+Open **Terminal** (Spotlight → type Terminal → press Return) and run this command:
+
+```
+defaults write com.anthropic.claudedesktop NSAppSleepDisabled -bool YES
+```
+
+Press Return. Then quit and reopen the Claude app for the setting to take effect.
+
+> This is a one-time change. It tells macOS never to throttle or sleep the Claude process — even when no one is actively using it. It persists across restarts and doesn't affect anything outside of Claude.
+
+---
+
+**Fix 2: Add Claude to Login Items**
+
+This ensures Claude launches automatically when your Mac Mini starts — and relaunches automatically if macOS ever quits it under memory pressure.
+
+1. Click the **Apple logo** → **System Settings**
+2. Click **General** in the left sidebar → **Login Items**
+3. Under **"Open at Login,"** click the **+** button
+4. Navigate to **Applications**, find **Claude**, and click **Add**
+
+> **About the "Allow in Background" section:** You'll notice a second section in Login Items called "Allow in Background." This section cannot be manually edited — macOS populates it automatically based on app behavior. The "Open at Login" fix above is the correct approach and all you need.
+
+With both fixes in place, Claude will survive days of unattended running — staying active, staying responsive, and keeping your scheduled tasks on track.
+
+---
+
+## Step 9: Create Your First Project
 
 In the left sidebar of Cowork, find **Projects** and click **Start Project** in the onboarding flow. Then click **New Project** and choose **Start from Scratch.**
 
@@ -160,7 +197,7 @@ You'll land on your project workspace — a chat area, your instructions on the 
 
 ---
 
-## Step 9: Test It From Your Phone
+## Step 10: Test It From Your Phone
 
 This is the moment. Put down your Mac Mini and pick up your phone.
 
@@ -188,7 +225,10 @@ A black screen doesn't always mean sleep — but if the Mac Mini itself slept, D
 **2. Check that the Claude desktop app is still running.**
 Dispatch needs the Claude app open in the background on your Mac Mini. If it was quit or crashed, open it again and go back to Cowork. Your pairing is still intact — you don't need to set up again.
 
-**3. Check your Energy settings — this is the most common culprit.**
+**3. Check if Claude was suspended by App Nap.**
+macOS can throttle or suspend idle apps — including Claude — when no one has been actively using the machine for a while. If your Mac Mini has been left on but unattended for several days and Dispatch suddenly stopped responding, this is the likely cause. The fix is in Step 8: disable App Nap and add Claude to Login Items. Do this once and it won't happen again.
+
+**4. Check your Energy settings — this is the most common culprit for immediate disconnects.**
 On a new Mac Mini, the default energy settings will put the machine to sleep and kill your Dispatch connection. Here's how to fix it permanently:
 
 - Click the **Apple logo in the top left corner of your screen**
@@ -222,6 +262,9 @@ My AI Tasks is ready. Add files to it, refine the instructions over time, and wa
 
 **Win 4 — You tested the full loop.**
 Task sent from phone → executed on Mac Mini → result delivered. That's the AI powerhouse working the way it's supposed to.
+
+**Win 5 — Cowork is protected against macOS's idle-app cleanup.**
+App Nap is disabled for Claude, and Claude is set to relaunch automatically if macOS ever quits it under memory pressure. Your scheduled tasks and Dispatch will keep running even when your Mac Mini hasn't been touched in days.
 
 *Your Mac Mini is no longer just a computer on your desk. It's working for you wherever you are.*
 
